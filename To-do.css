@@ -1,0 +1,151 @@
+ body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+   
+}
+.background-image{
+  background-image: url(image/kelly-sikkema--1_RZL8BGBM-unsplash.jpg );
+  background-size: 25%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.container {
+    opacity: unset;
+    background-color: #d5d2d2;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    justify-content: center;
+}
+
+.todo {
+    text-align: center;
+}
+
+.add-button {
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
+}
+
+.add-button:hover {
+    border: none;
+    border-radius: 2cm;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(209, 237, 167);
+    background: linear-gradient(135deg, #ff00d4 0%, #00ddff 100%);
+}
+
+.clear-task {
+    border: none;
+    background-color: rgb(205, 192, 167);
+    border-radius: 8px;
+}
+
+.clear-task:hover {
+    border: none;
+    border-radius: 8px;
+
+}
+
+.task-input {
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+    padding-bottom: 5px;
+}
+
+.task-input:focus {
+    outline: none;
+    border: none;
+}
+.todo-items{
+    list-style: none;
+}
+.item {
+ background-color: #ffffff;
+    padding: 10px;
+    font-size: med;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+
+  }
+ 
+  .fas {
+    font-size: large;
+    color: black;
+  }
+ 
+  .add-button .fa{
+    color: rgb(131, 121, 121);
+  }
+  .custom-btn:hover{
+    background-color: gray;
+  }
+ 
+
+  .btn-danger{
+    background-color: rgb(251, 251, 251);    
+    border: none;
+  }
+  .btn-danger:hover{
+    background: linear-gradient(135deg, #ff00d4 0%, #00ddff 100%);
+  }
+  .delete-button{
+    margin-left: auto;
+    position:absolute;
+    bottom:0;
+    right: 0;
+    height: 25px;
+  }
+  .checkbox{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 20px;  
+    border: black; 
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    
+  } 
+  .filters span {
+    margin: 0 8px;
+    font-size: 17px;
+    color: #444444;
+    cursor: pointer;
+  }
+  .filters{
+    padding-left: 50px;
+    margin-bottom: 3px;
+  }
+  
+  .filters span.active { 
+    color: #f12711;
+   } 
